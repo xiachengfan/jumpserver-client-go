@@ -10,26 +10,22 @@
 
 package swagger
 
-import (
-	"time"
-)
-
 type GatewayWithAuth struct {
-	Id string `json:"id,omitempty"`
-	Name string `json:"name"`
-	Ip string `json:"ip"`
-	Port int32 `json:"port,omitempty"`
-	Protocol string `json:"protocol,omitempty"`
-	Username string `json:"username,omitempty"`
-	Password string `json:"password,omitempty"`
-	PrivateKey string `json:"private_key,omitempty"`
-	PublicKey string `json:"public_key,omitempty"`
-	Domain string `json:"domain"`
-	IsActive bool `json:"is_active,omitempty"`
-	DateCreated time.Time `json:"date_created,omitempty"`
-	DateUpdated time.Time `json:"date_updated,omitempty"`
-	CreatedBy string `json:"created_by,omitempty"`
-	Comment string `json:"comment,omitempty"`
-	OrgId string `json:"org_id,omitempty"`
-	OrgName string `json:"org_name,omitempty"`
+	Id          string `json:"id,omitempty"`
+	Name        string `json:"name"`
+	Ip          string `json:"ip"`
+	Port        int32  `json:"port,omitempty"`
+	Protocol    string `json:"protocol,omitempty"`
+	Username    string `json:"username,omitempty"`
+	Password    string `json:"password,omitempty"`
+	PrivateKey  string `json:"private_key,omitempty"`
+	PublicKey   string `json:"public_key,omitempty"`
+	Domain      string `json:"domain"`
+	IsActive    bool   `json:"is_active,omitempty"`
+	DateCreated string `json:"date_created,omitempty"`
+	DateUpdated string `json:"date_updated,omitempty"`
+	CreatedBy   string `json:"created_by,omitempty"`
+	Comment     string `json:"comment,omitempty"`
+	OrgId       string `json:"org_id,omitempty"`
+	OrgName     string `json:"org_name,omitempty"`
 }

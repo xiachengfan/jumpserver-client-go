@@ -10,22 +10,18 @@
 
 package swagger
 
-import (
-	"time"
-)
-
 type RemoteApp struct {
-	Id string `json:"id,omitempty"`
-	Name string `json:"name"`
-	Asset string `json:"asset"`
-	AssetInfo string `json:"asset_info,omitempty"`
-	Type_ string `json:"type,omitempty"`
-	GetTypeDisplay string `json:"get_type_display,omitempty"`
-	Path string `json:"path"`
-	Params map[string]string `json:"params"`
-	DateCreated time.Time `json:"date_created,omitempty"`
-	CreatedBy string `json:"created_by,omitempty"`
-	Comment string `json:"comment,omitempty"`
-	OrgId string `json:"org_id,omitempty"`
-	OrgName string `json:"org_name,omitempty"`
+	Id             string            `json:"id,omitempty"`
+	Name           string            `json:"name"`
+	Asset          string            `json:"asset"`
+	AssetInfo      string            `json:"asset_info,omitempty"`
+	Type_          string            `json:"type,omitempty"`
+	GetTypeDisplay string            `json:"get_type_display,omitempty"`
+	Path           string            `json:"path"`
+	Params         map[string]string `json:"params"`
+	DateCreated    string            `json:"date_created,omitempty"`
+	CreatedBy      string            `json:"created_by,omitempty"`
+	Comment        string            `json:"comment,omitempty"`
+	OrgId          string            `json:"org_id,omitempty"`
+	OrgName        string            `json:"org_name,omitempty"`
 }

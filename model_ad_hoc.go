@@ -10,22 +10,18 @@
 
 package swagger
 
-import (
-	"time"
-)
-
 type AdHoc struct {
-	Id string `json:"id,omitempty"`
-	Task string `json:"task"`
-	Tasks string `json:"tasks"`
-	Pattern string `json:"pattern,omitempty"`
-	Options string `json:"options,omitempty"`
-	Hosts []string `json:"hosts"`
-	RunAsAdmin bool `json:"run_as_admin,omitempty"`
-	RunAs string `json:"run_as,omitempty"`
-	Become string `json:"become,omitempty"`
-	CreatedBy string `json:"created_by,omitempty"`
-	DateCreated time.Time `json:"date_created,omitempty"`
-	ShortId string `json:"short_id,omitempty"`
-	BecomeDisplay string `json:"become_display,omitempty"`
+	Id            string   `json:"id,omitempty"`
+	Task          string   `json:"task"`
+	Tasks         string   `json:"tasks"`
+	Pattern       string   `json:"pattern,omitempty"`
+	Options       string   `json:"options,omitempty"`
+	Hosts         []string `json:"hosts"`
+	RunAsAdmin    bool     `json:"run_as_admin,omitempty"`
+	RunAs         string   `json:"run_as,omitempty"`
+	Become        string   `json:"become,omitempty"`
+	CreatedBy     string   `json:"created_by,omitempty"`
+	DateCreated   string   `json:"date_created,omitempty"`
+	ShortId       string   `json:"short_id,omitempty"`
+	BecomeDisplay string   `json:"become_display,omitempty"`
 }

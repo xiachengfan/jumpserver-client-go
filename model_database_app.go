@@ -10,22 +10,18 @@
 
 package swagger
 
-import (
-	"time"
-)
-
 type DatabaseApp struct {
-	Id string `json:"id,omitempty"`
-	Name string `json:"name"`
-	Type_ string `json:"type,omitempty"`
+	Id             string `json:"id,omitempty"`
+	Name           string `json:"name"`
+	Type_          string `json:"type,omitempty"`
 	GetTypeDisplay string `json:"get_type_display,omitempty"`
-	Host string `json:"host"`
-	Port int32 `json:"port,omitempty"`
-	Database string `json:"database,omitempty"`
-	Comment string `json:"comment,omitempty"`
-	CreatedBy string `json:"created_by,omitempty"`
-	DateCreated time.Time `json:"date_created,omitempty"`
-	DateUpdated time.Time `json:"date_updated,omitempty"`
-	OrgId string `json:"org_id,omitempty"`
-	OrgName string `json:"org_name,omitempty"`
+	Host           string `json:"host"`
+	Port           int32  `json:"port,omitempty"`
+	Database       string `json:"database,omitempty"`
+	Comment        string `json:"comment,omitempty"`
+	CreatedBy      string `json:"created_by,omitempty"`
+	DateCreated    string `json:"date_created,omitempty"`
+	DateUpdated    string `json:"date_updated,omitempty"`
+	OrgId          string `json:"org_id,omitempty"`
+	OrgName        string `json:"org_name,omitempty"`
 }

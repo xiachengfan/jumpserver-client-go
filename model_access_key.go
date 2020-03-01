@@ -10,13 +10,9 @@
 
 package swagger
 
-import (
-	"time"
-)
-
 type AccessKey struct {
-	Id string `json:"id,omitempty"`
-	Secret string `json:"secret,omitempty"`
-	IsActive bool `json:"is_active,omitempty"`
-	DateCreated time.Time `json:"date_created,omitempty"`
+	Id          string `json:"id,omitempty"`
+	Secret      string `json:"secret,omitempty"`
+	IsActive    bool   `json:"is_active,omitempty"`
+	DateCreated string `json:"date_created,omitempty"`
 }

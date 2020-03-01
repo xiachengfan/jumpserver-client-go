@@ -10,11 +10,7 @@
 
 package swagger
 
-import (
-	"time"
-)
-
 type Connectivity struct {
-	Status int32 `json:"status"`
-	Datetime time.Time `json:"datetime"`
+	Status   int32  `json:"status"`
+	Datetime string `json:"datetime"`
 }

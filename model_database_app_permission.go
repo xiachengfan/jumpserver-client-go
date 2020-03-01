@@ -10,24 +10,20 @@
 
 package swagger
 
-import (
-	"time"
-)
-
 type DatabaseAppPermission struct {
-	Id string `json:"id,omitempty"`
-	Name string `json:"name"`
-	Users []string `json:"users,omitempty"`
-	UserGroups []string `json:"user_groups,omitempty"`
+	Id           string   `json:"id,omitempty"`
+	Name         string   `json:"name"`
+	Users        []string `json:"users,omitempty"`
+	UserGroups   []string `json:"user_groups,omitempty"`
 	DatabaseApps []string `json:"database_apps,omitempty"`
-	SystemUsers []string `json:"system_users"`
-	Comment string `json:"comment,omitempty"`
-	IsActive bool `json:"is_active,omitempty"`
-	DateStart time.Time `json:"date_start,omitempty"`
-	DateExpired time.Time `json:"date_expired,omitempty"`
-	IsValid string `json:"is_valid,omitempty"`
-	CreatedBy string `json:"created_by,omitempty"`
-	DateCreated time.Time `json:"date_created,omitempty"`
-	OrgId string `json:"org_id,omitempty"`
-	OrgName string `json:"org_name,omitempty"`
+	SystemUsers  []string `json:"system_users"`
+	Comment      string   `json:"comment,omitempty"`
+	IsActive     bool     `json:"is_active,omitempty"`
+	DateStart    string   `json:"date_start,omitempty"`
+	DateExpired  string   `json:"date_expired,omitempty"`
+	IsValid      string   `json:"is_valid,omitempty"`
+	CreatedBy    string   `json:"created_by,omitempty"`
+	DateCreated  string   `json:"date_created,omitempty"`
+	OrgId        string   `json:"org_id,omitempty"`
+	OrgName      string   `json:"org_name,omitempty"`
 }

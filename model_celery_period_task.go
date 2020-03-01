@@ -10,16 +10,12 @@
 
 package swagger
 
-import (
-	"time"
-)
-
 type CeleryPeriodTask struct {
 	// Useful description
-	Name string `json:"name"`
-	Task string `json:"task"`
-	Enabled bool `json:"enabled,omitempty"`
-	Description string `json:"description,omitempty"`
-	LastRunAt time.Time `json:"last_run_at,omitempty"`
-	TotalRunCount int32 `json:"total_run_count,omitempty"`
+	Name          string `json:"name"`
+	Task          string `json:"task"`
+	Enabled       bool   `json:"enabled,omitempty"`
+	Description   string `json:"description,omitempty"`
+	LastRunAt     string `json:"last_run_at,omitempty"`
+	TotalRunCount int32  `json:"total_run_count,omitempty"`
 }

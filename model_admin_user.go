@@ -10,22 +10,18 @@
 
 package swagger
 
-import (
-	"time"
-)
-
 type AdminUser struct {
-	Id string `json:"id,omitempty"`
-	Name string `json:"name"`
-	Username string `json:"username,omitempty"`
-	Password string `json:"password,omitempty"`
-	PrivateKey string `json:"private_key,omitempty"`
-	PublicKey string `json:"public_key,omitempty"`
-	Comment string `json:"comment,omitempty"`
+	Id           string `json:"id,omitempty"`
+	Name         string `json:"name"`
+	Username     string `json:"username,omitempty"`
+	Password     string `json:"password,omitempty"`
+	PrivateKey   string `json:"private_key,omitempty"`
+	PublicKey    string `json:"public_key,omitempty"`
+	Comment      string `json:"comment,omitempty"`
 	AssetsAmount string `json:"assets_amount,omitempty"`
-	DateCreated time.Time `json:"date_created,omitempty"`
-	DateUpdated time.Time `json:"date_updated,omitempty"`
-	CreatedBy string `json:"created_by,omitempty"`
-	OrgId string `json:"org_id,omitempty"`
-	OrgName string `json:"org_name,omitempty"`
+	DateCreated  string `json:"date_created,omitempty"`
+	DateUpdated  string `json:"date_updated,omitempty"`
+	CreatedBy    string `json:"created_by,omitempty"`
+	OrgId        string `json:"org_id,omitempty"`
+	OrgName      string `json:"org_name,omitempty"`
 }

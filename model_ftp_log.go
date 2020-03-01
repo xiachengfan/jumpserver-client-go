@@ -10,19 +10,15 @@
 
 package swagger
 
-import (
-	"time"
-)
-
 type FtpLog struct {
-	Id string `json:"id,omitempty"`
-	OrgId string `json:"org_id,omitempty"`
-	User string `json:"user"`
+	Id         string `json:"id,omitempty"`
+	OrgId      string `json:"org_id,omitempty"`
+	User       string `json:"user"`
 	RemoteAddr string `json:"remote_addr,omitempty"`
-	Asset string `json:"asset"`
+	Asset      string `json:"asset"`
 	SystemUser string `json:"system_user"`
-	Operate string `json:"operate"`
-	Filename string `json:"filename"`
-	IsSuccess bool `json:"is_success,omitempty"`
-	DateStart time.Time `json:"date_start,omitempty"`
+	Operate    string `json:"operate"`
+	Filename   string `json:"filename"`
+	IsSuccess  bool   `json:"is_success,omitempty"`
+	DateStart  string `json:"date_start,omitempty"`
 }

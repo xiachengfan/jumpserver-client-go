@@ -10,18 +10,14 @@
 
 package swagger
 
-import (
-	"time"
-)
-
 type CommandExecution struct {
-	Id string `json:"id,omitempty"`
-	Hosts []string `json:"hosts"`
-	RunAs string `json:"run_as"`
-	Command string `json:"command"`
-	Result string `json:"result,omitempty"`
-	LogUrl string `json:"log_url,omitempty"`
-	IsFinished bool `json:"is_finished,omitempty"`
-	DateCreated time.Time `json:"date_created,omitempty"`
-	DateFinished time.Time `json:"date_finished,omitempty"`
+	Id           string   `json:"id,omitempty"`
+	Hosts        []string `json:"hosts"`
+	RunAs        string   `json:"run_as"`
+	Command      string   `json:"command"`
+	Result       string   `json:"result,omitempty"`
+	LogUrl       string   `json:"log_url,omitempty"`
+	IsFinished   bool     `json:"is_finished,omitempty"`
+	DateCreated  string   `json:"date_created,omitempty"`
+	DateFinished string   `json:"date_finished,omitempty"`
 }

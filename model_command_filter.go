@@ -10,20 +10,16 @@
 
 package swagger
 
-import (
-	"time"
-)
-
 type CommandFilter struct {
-	Id string `json:"id,omitempty"`
-	Name string `json:"name"`
-	OrgId string `json:"org_id,omitempty"`
-	OrgName string `json:"org_name,omitempty"`
-	IsActive bool `json:"is_active,omitempty"`
-	Comment string `json:"comment,omitempty"`
-	CreatedBy string `json:"created_by,omitempty"`
-	DateCreated time.Time `json:"date_created,omitempty"`
-	DateUpdated time.Time `json:"date_updated,omitempty"`
-	Rules []string `json:"rules,omitempty"`
+	Id          string   `json:"id,omitempty"`
+	Name        string   `json:"name"`
+	OrgId       string   `json:"org_id,omitempty"`
+	OrgName     string   `json:"org_name,omitempty"`
+	IsActive    bool     `json:"is_active,omitempty"`
+	Comment     string   `json:"comment,omitempty"`
+	CreatedBy   string   `json:"created_by,omitempty"`
+	DateCreated string   `json:"date_created,omitempty"`
+	DateUpdated string   `json:"date_updated,omitempty"`
+	Rules       []string `json:"rules,omitempty"`
 	SystemUsers []string `json:"system_users,omitempty"`
 }

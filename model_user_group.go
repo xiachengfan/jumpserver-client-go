@@ -10,18 +10,14 @@
 
 package swagger
 
-import (
-	"time"
-)
-
 type UserGroup struct {
-	Id string `json:"id,omitempty"`
-	Name string `json:"name"`
-	Users []string `json:"users,omitempty"`
-	UsersAmount string `json:"users_amount,omitempty"`
-	Comment string `json:"comment,omitempty"`
-	DateCreated time.Time `json:"date_created,omitempty"`
-	CreatedBy string `json:"created_by,omitempty"`
-	OrgId string `json:"org_id,omitempty"`
-	OrgName string `json:"org_name,omitempty"`
+	Id          string   `json:"id,omitempty"`
+	Name        string   `json:"name"`
+	Users       []string `json:"users,omitempty"`
+	UsersAmount string   `json:"users_amount,omitempty"`
+	Comment     string   `json:"comment,omitempty"`
+	DateCreated string   `json:"date_created,omitempty"`
+	CreatedBy   string   `json:"created_by,omitempty"`
+	OrgId       string   `json:"org_id,omitempty"`
+	OrgName     string   `json:"org_name,omitempty"`
 }

@@ -10,18 +10,14 @@
 
 package swagger
 
-import (
-	"time"
-)
-
 type Domain struct {
-	Id string `json:"id,omitempty"`
-	Name string `json:"name"`
-	AssetCount string `json:"asset_count,omitempty"`
-	GatewayCount string `json:"gateway_count,omitempty"`
-	Comment string `json:"comment,omitempty"`
-	Assets []string `json:"assets"`
-	DateCreated time.Time `json:"date_created,omitempty"`
-	OrgId string `json:"org_id,omitempty"`
-	OrgName string `json:"org_name,omitempty"`
+	Id           string   `json:"id,omitempty"`
+	Name         string   `json:"name"`
+	AssetCount   string   `json:"asset_count,omitempty"`
+	GatewayCount string   `json:"gateway_count,omitempty"`
+	Comment      string   `json:"comment,omitempty"`
+	Assets       []string `json:"assets"`
+	DateCreated  string   `json:"date_created,omitempty"`
+	OrgId        string   `json:"org_id,omitempty"`
+	OrgName      string   `json:"org_name,omitempty"`
 }

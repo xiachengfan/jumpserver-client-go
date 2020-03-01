@@ -10,21 +10,17 @@
 
 package swagger
 
-import (
-	"time"
-)
-
 type GatheredUser struct {
-	Id string `json:"id,omitempty"`
-	Asset string `json:"asset,omitempty"`
-	Hostname string `json:"hostname,omitempty"`
-	Ip string `json:"ip,omitempty"`
-	Username string `json:"username,omitempty"`
-	DateLastLogin time.Time `json:"date_last_login,omitempty"`
-	IpLastLogin string `json:"ip_last_login,omitempty"`
-	Present bool `json:"present,omitempty"`
-	DateCreated time.Time `json:"date_created,omitempty"`
-	DateUpdated time.Time `json:"date_updated,omitempty"`
-	OrgId string `json:"org_id,omitempty"`
-	OrgName string `json:"org_name,omitempty"`
+	Id            string `json:"id,omitempty"`
+	Asset         string `json:"asset,omitempty"`
+	Hostname      string `json:"hostname,omitempty"`
+	Ip            string `json:"ip,omitempty"`
+	Username      string `json:"username,omitempty"`
+	DateLastLogin string `json:"date_last_login,omitempty"`
+	IpLastLogin   string `json:"ip_last_login,omitempty"`
+	Present       bool   `json:"present,omitempty"`
+	DateCreated   string `json:"date_created,omitempty"`
+	DateUpdated   string `json:"date_updated,omitempty"`
+	OrgId         string `json:"org_id,omitempty"`
+	OrgName       string `json:"org_name,omitempty"`
 }

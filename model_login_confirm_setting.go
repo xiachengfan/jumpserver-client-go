@@ -10,14 +10,10 @@
 
 package swagger
 
-import (
-	"time"
-)
-
 type LoginConfirmSetting struct {
-	Id string `json:"id,omitempty"`
-	User string `json:"user"`
-	Reviewers []string `json:"reviewers,omitempty"`
-	DateCreated time.Time `json:"date_created,omitempty"`
-	DateUpdated time.Time `json:"date_updated,omitempty"`
+	Id          string   `json:"id,omitempty"`
+	User        string   `json:"user"`
+	Reviewers   []string `json:"reviewers,omitempty"`
+	DateCreated string   `json:"date_created,omitempty"`
+	DateUpdated string   `json:"date_updated,omitempty"`
 }

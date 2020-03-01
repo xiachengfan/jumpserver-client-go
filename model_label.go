@@ -10,21 +10,17 @@
 
 package swagger
 
-import (
-	"time"
-)
-
 type Label struct {
-	Id string `json:"id,omitempty"`
-	Name string `json:"name"`
-	Value string `json:"value"`
-	Category string `json:"category,omitempty"`
-	IsActive bool `json:"is_active,omitempty"`
-	Comment string `json:"comment,omitempty"`
-	DateCreated time.Time `json:"date_created,omitempty"`
-	AssetCount string `json:"asset_count,omitempty"`
-	Assets []string `json:"assets"`
-	GetCategoryDisplay string `json:"get_category_display,omitempty"`
-	OrgId string `json:"org_id,omitempty"`
-	OrgName string `json:"org_name,omitempty"`
+	Id                 string   `json:"id,omitempty"`
+	Name               string   `json:"name"`
+	Value              string   `json:"value"`
+	Category           string   `json:"category,omitempty"`
+	IsActive           bool     `json:"is_active,omitempty"`
+	Comment            string   `json:"comment,omitempty"`
+	DateCreated        string   `json:"date_created,omitempty"`
+	AssetCount         string   `json:"asset_count,omitempty"`
+	Assets             []string `json:"assets"`
+	GetCategoryDisplay string   `json:"get_category_display,omitempty"`
+	OrgId              string   `json:"org_id,omitempty"`
+	OrgName            string   `json:"org_name,omitempty"`
 }
